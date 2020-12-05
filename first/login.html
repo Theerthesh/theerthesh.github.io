@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        login page
+    </title>
+    <link rel="stylesheet" href="css1.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#reg").click(function(){
+            $("div").remove("#login","slow");
+            $("#login1").css("display","inline");
+        });
+    });
+    </script>
+</head>
+<body>
+    
+    <div id="login">
+        <div class="logname">
+           <h2>Login here</h2> 
+        </div>
+        <div class="loddetail">
+            Username:
+            <input type="text" id="te" placeholder="Enter user name">   
+            Password:
+            <input type="password" id="te" placeholder="Enter password">
+        
+            <p style="margin:0%;color:lightseagreen;">not registered?<a id="reg" style="zoom:0%;" >Register</a></p>
+            <input type="submit" id="su" value="Login">
+        </div>
+    </div>
+    
+
+    <div id="login1" style="height: 470px;">
+        <div class="logname1">
+           <h2>Register</h2> 
+        </div>
+        <div class="loddetail1" style="margin-top:0%;">
+            Username:
+            <input type="text" id="te"  placeholder="Enter user name">   
+            Password:
+            <input type="password" id="te" placeholder="Enter password">
+            Email:
+            <input type="email" id="te" placeholder="Enter email">
+            <p style="margin:0%;color:lightseagreen;">already registered?<a id="loginn" style="zoom:0%;" href="login.html">Login</a></p>
+            <input type="submit" id="su" value="Login">
+        </div>
+    </div>
+    <img class="logimg" src="PicsArt_02-26-08.42.39.png" width="100px" height="100px">
+</body>
+</html>
