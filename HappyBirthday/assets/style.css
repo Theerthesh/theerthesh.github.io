@@ -1,0 +1,5 @@
+.happyBirthday {
+    background-color: rgb(0,0,0,0.5);font-family: serif;
+    background-image:url('../pics/backgroundpics/backgroundgif.gif'),url('../pics/backgroundpics/backgroundgif2.gif');
+    background-repeat: no-repeat,repeat;
+}
