@@ -11,17 +11,35 @@ window.onload = function () {
         }
     }
 }
-function Drag(){
+function Drag() {
     var i = 4;
-    var blinktime= setInterval(function () {
+    var blinktime = setInterval(function () {
         if (i >= 0 && document.getElementById('drag').style.display !== "inline") {
             document.getElementById('drag').style.display = "inline";
-            i--;
-        }else if(i >= 0 && document.getElementById('drag').style.display == "inline"){
+
+        } else if (i >= 0 && document.getElementById('drag').style.display == "inline") {
             document.getElementById('drag').style.display = "none";
+            i--;
         }
-        if (i < 0){
+        if (i < 0) {
             clearInterval(blinktime);
         }
     }, 800)
+}
+displaytextmemory = false;
+function displaytext() {
+    var par = document.getElementById('paragraph');
+    var img = document.getElementById('memoryimg');
+    img.style.maxHeight = '100px';
+    img.style.maxWidth = '100px';
+    var text = "The oldest classical Greek and Latin writing had little or no space between words and could be written in boustrophedon (alternating directions).Over time, text direction (left to right) became standardized, and word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphs, similar to an underscore at the beginning of the new group.[2] The Greek parágraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted inline between sentences The hedera leaf (e.g. ☙) has also been used in the same way."
+    if (displaytextmemory) {
+        img.style.maxHeight = '300px';
+        img.style.maxWidth = '300px';
+        document.getElementById('paragraph').innerHTML = "";
+        displaytextmemory = false;
+    } else {
+        document.getElementById('paragraph').innerHTML += text;
+        displaytextmemory = true;
+    }
 }

@@ -3,3 +3,14 @@
     background-image:url('../pics/backgroundpics/backgroundgif.gif'),url('../pics/backgroundpics/backgroundgif2.gif');
     background-repeat: no-repeat,repeat;
 }
+#memoryimg{
+    float: left;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 12px;
+}
+#paragraph{
+    font-size: smaller;
+    text-align: justify;
+    line-height: 1.3;
+}
