@@ -11,10 +11,8 @@ window.onload = function () {
         }
     }
 }
-var scrollcountdown = 4;
-
 function Drag() {
-   
+    var scrollcountdown = 4;
     var blinktime = setInterval(function () {
         if (scrollcountdown >= 0 && document.getElementById('drag').style.display !== "inline") {
             document.getElementById('drag').style.display = "inline";
@@ -28,7 +26,7 @@ function Drag() {
             window.scrollBy(0,500);
         }
         window.onscroll = function(){document.getElementById('drag').style.display = "none";clearInterval(blinktime)}
-    }, 800)
+    }, 300)
 }
 displaytextmemory = false;
 function displaytext() {
