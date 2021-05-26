@@ -1,4 +1,6 @@
 window.onload = function () {
+    document.getElementById('audio').muted = false;
+    document.getElementById('audio').play();
     document.getElementById('audio').volume = 0.5;
     var name = setInterval(printName, 200);
     var insertString = 'NameHere';
