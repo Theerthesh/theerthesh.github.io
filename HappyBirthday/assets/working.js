@@ -1,11 +1,17 @@
+var popsound = new Audio('./audio/bgaudio.mpeg');
 window.onload = function () {
-    document.getElementById('audio').muted = false;
-    document.getElementById('audio').play();
-    document.getElementById('audio').volume = 0.5;
+    //  document.getElementById('audio').play();
+    //  document.getElementById('audio').volume = 0.5;  
+    popsound.load();
+    popsound.play();
+    console.log(popsound.play());
+    popsound.volume = 0.5;
+    popsound.loop = true;
     var name = setInterval(printName, 200);
     var insertString = 'NameHere';
     var i = 0;
     function printName() {
+
         document.getElementById("name").innerHTML += insertString[i];
         i++;
         if (insertString[i] === undefined) {
@@ -26,10 +32,13 @@ function Drag() {
         }
         if (scrollcountdown < 0) {
             clearInterval(blinktime);
-            document.getElementById('audio').volume = 0.08;
-            window.scrollBy(0,500);
+            popsound.volume = 0.08;
+            // document.getElementById('audio').volume = 0.08;
+            window.scrollBy(0, 500);
         }
-        window.onscroll = function(){document.getElementById('drag').style.display = "none";clearInterval(blinktime)}
+        window.onscroll = function () {
+            document.getElementById('drag').style.display = "none"; clearInterval(blinktime); popsound.volume = 0.08;// document.getElementById('audio').volume = 0.08;
+        }
     }, 800)
 }
 displaytextmemory = false;
