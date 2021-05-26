@@ -1,10 +1,11 @@
 var popsound = new Audio('./audio/bgaudio.mpeg');
-window.onload = function () {
+window.onload = function start() {
     //  document.getElementById('audio').play();
     //  document.getElementById('audio').volume = 0.5;  
     popsound.load();
-    popsound.play();
-    console.log(popsound.play());
+    popsound.autoplay = true;
+    console.log(popsound.play() === undefined);
+    if(popsound.play() === undefined) { start() }else{popsound.play()}
     popsound.volume = 0.5;
     popsound.loop = true;
     var name = setInterval(printName, 200);
