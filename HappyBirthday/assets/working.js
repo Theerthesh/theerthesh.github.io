@@ -4,8 +4,8 @@ window.onload = function start() {
     //  document.getElementById('audio').volume = 0.5;  
     popsound.load();
     popsound.autoplay = true;
-    console.log(popsound.play() === undefined);
-    if(popsound.play() === undefined) { start() }else{popsound.play()}
+    // console.log(popsound.play() === undefined);
+    // if(popsound.play() === undefined) { popsound.play(); start() }else{popsound.play()}
     popsound.volume = 0.5;
     popsound.loop = true;
     var name = setInterval(printName, 200);
