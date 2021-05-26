@@ -11,19 +11,23 @@ window.onload = function () {
         }
     }
 }
+var scrollcountdown = 4;
+
 function Drag() {
-    var i = 4;
+   
     var blinktime = setInterval(function () {
-        if (i >= 0 && document.getElementById('drag').style.display !== "inline") {
+        if (scrollcountdown >= 0 && document.getElementById('drag').style.display !== "inline") {
             document.getElementById('drag').style.display = "inline";
 
-        } else if (i >= 0 && document.getElementById('drag').style.display == "inline") {
+        } else if (scrollcountdown >= 0 && document.getElementById('drag').style.display == "inline") {
             document.getElementById('drag').style.display = "none";
-            i--;
+            scrollcountdown--;
         }
-        if (i < 0) {
+        if (scrollcountdown < 0) {
             clearInterval(blinktime);
+            window.scrollBy(0,500);
         }
+        window.onscroll = function(){document.getElementById('drag').style.display = "none";clearInterval(blinktime)}
     }, 800)
 }
 displaytextmemory = false;
