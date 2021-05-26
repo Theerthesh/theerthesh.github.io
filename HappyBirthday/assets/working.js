@@ -1,4 +1,5 @@
 window.onload = function () {
+    document.getElementById('audio').volume = 0.5;
     var name = setInterval(printName, 200);
     var insertString = 'NameHere';
     var i = 0;
@@ -23,10 +24,11 @@ function Drag() {
         }
         if (scrollcountdown < 0) {
             clearInterval(blinktime);
+            document.getElementById('audio').volume = 0.08;
             window.scrollBy(0,500);
         }
         window.onscroll = function(){document.getElementById('drag').style.display = "none";clearInterval(blinktime)}
-    }, 300)
+    }, 800)
 }
 displaytextmemory = false;
 function displaytext() {
