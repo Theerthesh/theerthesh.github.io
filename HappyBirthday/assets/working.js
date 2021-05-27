@@ -1,21 +1,15 @@
 // navigator.mediaDevices.getUserMedia({Sounds:true})
 // Sounds.requestPermission()
-
 var popsound = new Audio('./audio/bgaudio.mpeg');
 window.onload = function start() {
-    //  document.getElementById('audio').play();
-    //  document.getElementById('audio').volume = 0.5;  
     popsound.load();
     popsound.play();
-    // console.log(popsound.play() === undefined);
-    // if(popsound.play() === undefined) { popsound.play(); start() }else{popsound.play()}
     popsound.volume = 0.5;
     popsound.loop = true;
     var name = setInterval(printName, 200);
     var insertString = 'NameHere';
     var i = 0;
     function printName() {
-
         document.getElementById("name").innerHTML += insertString[i];
         i++;
         if (insertString[i] === undefined) {
@@ -24,9 +18,12 @@ window.onload = function start() {
         }
     }
 }
+// var displayclick = document.getElementById('clickme').style;
+var blinktime;
+//this function display drag img when and how
 function Drag() {
     var scrollcountdown = 4;
-    var blinktime = setInterval(function () {
+    blinktime = setInterval(function () {
         if (scrollcountdown >= 0 && document.getElementById('drag').style.display !== "inline") {
             document.getElementById('drag').style.display = "inline";
 
@@ -35,30 +32,47 @@ function Drag() {
             scrollcountdown--;
         }
         if (scrollcountdown < 0) {
-            clearInterval(blinktime);
-            popsound.volume = 0.08;
-            // document.getElementById('audio').volume = 0.08;
             window.scrollBy(0, 500);
         }
-        window.onscroll = function () {
-            document.getElementById('drag').style.display = "none"; clearInterval(blinktime); popsound.volume = 0.08;// document.getElementById('audio').volume = 0.08;
-        }
-    }, 800)
+    }, 800);           
 }
-displaytextmemory = false;
+var firstscroll = true;
+// this function run all time when window scroll 
+window.onscroll = function(){
+    if(firstscroll){
+    displayclickme();
+    firstscroll = false;
+    document.getElementById('drag').style.display = "none";
+    clearInterval(blinktime); 
+    popsound.volume = 0.08;
+    }
+}
+var a;
+//this function display the click (hand img) after 3 second
+function displayclickme(){
+    a=setTimeout(() => {
+        displayclick = document.getElementById('clickme').style;
+        displayclick.display = "inline";        
+    },3000)
+}
+var displaytextmemory = false;
+// displaytext function run when user click on top of the image
 function displaytext() {
-    var par = document.getElementById('paragraph');
+    clearTimeout(a);
     var img = document.getElementById('memoryimg');
-    img.style.maxHeight = '100px';
-    img.style.maxWidth = '100px';
+    document.getElementById('clickme').style.display = 'none';
     var text = "The oldest classical Greek and Latin writing had little or no space between words and could be written in boustrophedon (alternating directions).Over time, text direction (left to right) became standardized, and word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphs, similar to an underscore at the beginning of the new group.[2] The Greek parágraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted inline between sentences The hedera leaf (e.g. ☙) has also been used in the same way."
     if (displaytextmemory) {
         img.style.maxHeight = '300px';
         img.style.maxWidth = '300px';
         document.getElementById('paragraph').innerHTML = "";
         displaytextmemory = false;
+     
     } else {
+        img.style.maxHeight = '100px';
+        img.style.maxWidth = '100px';
         document.getElementById('paragraph').innerHTML += text;
         displaytextmemory = true;
+        //document.getElementById('clickme').style.display = 'none';
     }
 }
