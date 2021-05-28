@@ -51,8 +51,7 @@ var a;
 //this function display the click (hand img) after 3 second
 function displayclickme(){
     a=setTimeout(() => {
-        displayclick = document.getElementById('clickme').style;
-        displayclick.display = "inline";        
+            document.getElementById('clickme').style.display = "inline";              
     },3000)
 }
 var displaytextmemory = false;
@@ -67,12 +66,13 @@ function displaytext() {
         img.style.maxWidth = '300px';
         document.getElementById('paragraph').innerHTML = "";
         displaytextmemory = false;
+        document.getElementById('footer').style.display = "none";
      
     } else {
         img.style.maxHeight = '100px';
         img.style.maxWidth = '100px';
         document.getElementById('paragraph').innerHTML += text;
         displaytextmemory = true;
-        //document.getElementById('clickme').style.display = 'none';
+        document.getElementById('footer').style.display = "inline"
     }
 }

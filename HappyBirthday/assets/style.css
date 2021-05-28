@@ -6,6 +6,10 @@ scroll-behavior: smooth;
     background-image:url('../pics/backgroundpics/backgroundgif.gif'),url('../pics/backgroundpics/backgroundgif2.gif');
     background-repeat: no-repeat,repeat;
 }
+.memoryblock{
+    width: fit-content;
+    overflow-x: hidden;
+}
 #memoryimg{
     float: left;
     max-width: 300px;
@@ -37,4 +41,14 @@ scroll-behavior: smooth;
 .clickme{
     margin-top: -74px;
     margin-left: 151px;
+    font-family: system-ui;
+    font-weight: bolder;
+}
+.next{
+    margin-right: 43px;
+    float: right;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(247, 77, 77),rgb(80, 5, 5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
