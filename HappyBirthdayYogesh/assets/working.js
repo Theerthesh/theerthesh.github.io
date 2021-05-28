@@ -61,7 +61,7 @@ function displaytext() {
     clearTimeout(a);
     var img = document.getElementById('memoryimg');
     document.getElementById('clickme').style.display = 'none';
-    var text ="Remember that first trip with ua crush S*** wer u dint slept for the whole night in exictement. Booked drivezy (khatara scooty). All the way madam ka photography karte hue, remember that police scene when he told 2 years jail hoga, 2 years MCA jail mai. and phir all the way enjoy karte hue dominos mai pizza kha ke. Aur teri in sab bakchodi ke chalte imam ki 8ki RayBan yaad h. Manya wala scene tera.<br><br><b>---> this words written by akash<b>";
+    var text ="Remember that first trip with ua crush S*** wer u dint slept for the whole night in exictement. Booked drivezy (khatara scooty). All the way madam ka photography karte hue, remember that police scene when he told 2 years jail hoga, 2 years MCA jail mai. and phir all the way enjoy karte hue dominos mai pizza kha ke. Aur teri in sab bakchodi ke chalte imam ki 8ki RayBan yaad h. Manya wala scene tera.<br><br><b>---> All these words written by Osama<b>";
     if (displaytextmemory) {
         img.style.maxHeight = '300px';
         img.style.maxWidth = '300px';
