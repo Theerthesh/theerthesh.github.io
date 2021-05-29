@@ -22,7 +22,7 @@ window.onload = function start() {
 var blinktime;
 //this function display drag img when and how
 function Drag() {
-    var scrollcountdown = 4;
+    var scrollcountdown = 2;
     blinktime = setInterval(function () {
         if (scrollcountdown >= 0 && document.getElementById('drag').style.display !== "inline") {
             document.getElementById('drag').style.display = "inline";
@@ -35,7 +35,7 @@ function Drag() {
             window.scrollBy(0, 500);
             clearInterval(blinktime); 
         }
-    }, 800);           
+    }, 200);           
 }
 var firstscroll = true;
 // this function run all time when window scroll 
@@ -54,7 +54,7 @@ var a;
 function displayclickme(){
     a=setTimeout(() => {
             document.getElementById('clickme').style.display = "inline";              
-    },3000)
+    },1000)
 }
 var displaytextmemory = false;
 // displaytext function run when user click on top of the image
