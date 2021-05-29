@@ -33,6 +33,7 @@ function Drag() {
         }
         if (scrollcountdown < 0) {
             window.scrollBy(0, 500);
+            clearInterval(blinktime); 
         }
     }, 800);           
 }
@@ -40,6 +41,7 @@ var firstscroll = true;
 // this function run all time when window scroll 
 window.onscroll = function(){
     if(firstscroll){
+        window.scrollBy(500, 0);
     displayclickme();
     firstscroll = false;
     document.getElementById('drag').style.display = "none";
