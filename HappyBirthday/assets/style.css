@@ -38,12 +38,6 @@ scroll-behavior: smooth;
     font-weight: bold;
     padding: 0 2px 0 2px;
 }
-.clickme{
-    margin-top: -74px;
-    margin-left: 151px;
-    font-family: system-ui;
-    font-weight: bolder;
-}
 .next{
     margin-right: 43px;
     float: right;
@@ -51,4 +45,8 @@ scroll-behavior: smooth;
     background: -webkit-linear-gradient(rgb(247, 77, 77),rgb(80, 5, 5));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#clickme{
+    margin-top: -15px;
+    margin-left: 20px;
 }

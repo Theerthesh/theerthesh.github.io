@@ -22,7 +22,7 @@ window.onload = function start() {
 var blinktime;
 //this function display drag img when and how
 function Drag() {
-    var scrollcountdown = 2;
+    var scrollcountdown = 1;
     blinktime = setInterval(function () {
         if (scrollcountdown >= 0 && document.getElementById('drag').style.display !== "inline") {
             document.getElementById('drag').style.display = "inline";
@@ -54,7 +54,7 @@ var a;
 function displayclickme(){
     a=setTimeout(() => {
             document.getElementById('clickme').style.display = "inline";              
-    },1000)
+    },500)
 }
 var displaytextmemory = false;
 // displaytext function run when user click on top of the image
