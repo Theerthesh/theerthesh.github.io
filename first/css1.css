@@ -1,0 +1,214 @@
+div a{
+    border-radius: 10px;
+    margin:0.5%;
+    margin-right: 2.5%; 
+    padding:0.5%;
+    text-decoration:none;
+    color:darkgray;
+    border:1px solid transparent;         
+}
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+body{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("back.jpg");
+background-size: cover;
+}
+div img.im{
+    float: right;
+    
+}
+div a:hover{
+    background-color:rgba(114, 116, 231, 0.5);
+    color:white;
+    zoom: 1.1;
+    transition: 0.6s ease-in-out;
+}
+.aaa:active{
+    background-color:white;
+    color: black;
+    float:right;
+
+}
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0%;
+}
+.text:hover{
+    zoom: 1.2;
+    transition: 0.2s ease-in-out;
+}
+.imgg{width: 300px;
+    height: 650px;
+    border-radius:25px;
+}
+.imgg:hover{
+    zoom: 1.1;
+    transition: 0.2s ease-in-out;
+}
+/*contact propertes*/
+
+.inside{
+    font-size: 20px;
+    color: rosybrown;
+    margin-left: 12px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    
+}
+.mypic{
+    border-style: dashed;
+    border-color:lightblue;
+    height: 400px;
+    width: 1000px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.aaaa{
+    display: flex;
+}
+hr{
+    border-style: dashed;
+    border-color: white;
+    zoom: 1.5;
+}
+/*profile*/
+#plist
+{
+    position: relative;
+    border-radius: 20px;
+    display: none;
+    padding: 20px;
+    color:white;
+    background-color: rgba(235, 165, 217, 0.5);
+}
+#plist11{
+    position: relative;
+    border-radius: 20px;  
+    display: none;
+    padding: 20px;
+    color:white;
+    
+
+}
+#plist img{
+    border-radius: 10px;
+    margin: 10px;
+}
+#photos,#photos1
+{
+    position: relative;
+    top:10%;
+    width:500px;
+    height:30px;
+    border-radius: 20px;
+    color:white;
+    background-color: rgb(77, 147, 238);
+    text-align: center;
+    padding-top: 10px;
+   margin-top:10px;margin-bottom: 30px;
+    justify-items: center;
+}
+#photos:hover,#photos1:hover{
+    display:inline-block;   
+    background-color:rgb(236, 117, 230);
+    color:white;
+    transition: 0.2s ease-in-out;
+   zoom: 1.1;
+    
+}
+/*login*/
+#login,#login1{
+    display:inline-blocks;
+    width:400px;
+    height: 400px;
+    position: absolute;
+    left: 35%;
+    border-radius: 10px;
+    top:30%;
+    background-color: rgba(15, 15, 15, 0.322);
+}
+.logimg{
+ position: absolute;
+ left: 44.5%;
+ top: 23%
+}
+.logname,.logname1{
+    text-align: center;
+    margin-top: 12%;
+    font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white
+}
+.loddetail,.loddetail1{
+    font-size: 140%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(172, 221, 58);
+    margin-top: 10%;
+    margin-left: 10%;
+
+}
+#te{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(172, 221, 58);
+    width: 90%;
+    outline: none;
+    font-size: 100%;
+    margin: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+#te:focus{
+    border-bottom-color: brown;
+    transition: 0.6s ease-in-out;
+    border-bottom-width: bold;
+}
+#su{
+    width: 30%;
+    font-size: 130%;
+    background-color:transparent;
+    border-color: yellow;
+    border-radius: 50px;
+    margin-top: 8%;
+    margin-left: 30%;
+    color:yellow;
+    padding: 1%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#su:hover{
+    margin-left: 32%;
+    width: 25%;
+    font-size: 120%;
+    transition: 0.2s ease-in-out;
+}
+#logout{
+    margin-right: -30px;
+    float: right;
+    margin-top: 5px;
+}
+#logout a{
+    
+    padding: 4px;
+}
+#logout a img{
+    width: 40px;
+    height: 35px;
+}
+#logout a:hover{
+    zoom:-1;
+    background-color: transparent;
+}
+/*register*/
+#login1{
+    display: none;
+}

@@ -1,0 +1,52 @@
+html{
+scroll-behavior: smooth;
+}
+.happyBirthday {
+    background-color: rgb(0,0,0,0.5);font-family: serif;
+    background-image:url('../pics/backgroundpics/backgroundgif.gif'),url('../pics/backgroundpics/backgroundgif2.gif');
+    background-repeat: no-repeat,repeat;
+}
+.memoryblock{
+    width: fit-content;
+    overflow-x: hidden;
+}
+#memoryimg{
+    float: left;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 12px;
+    transition: all .4s ease;
+}
+#paragraph{
+    font-size: smaller;
+    text-align: justify;
+    line-height: 1.3;
+}
+.disable-userSelect{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.firstpage{
+    height: 93vh;
+}
+.tag{
+    margin: -9px 0 0 20px;
+    background-color: white;
+    width: fit-content;
+    font-size: x-small;
+    font-weight: bold;
+    padding: 0 2px 0 2px;
+}
+.next{
+    margin-right: 43px;
+    float: right;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(247, 77, 77),rgb(80, 5, 5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#clickme{
+    margin-top: -15px;
+    margin-left: 20px;
+}

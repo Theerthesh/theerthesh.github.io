@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>birthday</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/working.js"></script>
+    <title>birthday wishes</title>
+</head>
+
+<body class="disable-userSelect">
+    <!-- <audio id="audio" controls src="./audio/bgaudio.mpeg" loop style="display: none;" preload="auto">
+    </audio>  -->
+    <!-- <embed style="display: none;" type="audio/midi"  src="./audio/bgaudio.mpeg" volume="60" loop="true" autostart="true" /> -->
+    <div class="container-fluid vw-100 d-flex align-items-center  justify-content-center firstpage">
+        <div class="row position-absolute vw-100 text-white text-center firstpage ">
+            <div class="col pt-3"><img src="./pics/backgroundpics/1.JPG" width="130" height="160"></div>
+            <div class="col pt-3"><img src="./pics/backgroundpics/2.jpg" width="130" height="160"></div>
+            <div class="col pt-3"><img src="./pics/backgroundpics/3.jpg" width="130" height="160"></div>
+            <div class="col pt-3"><img src="./pics/backgroundpics/4.jpg" width="130" height="160"></div>
+            <div class="col pt-3"><img src="./pics/backgroundpics/5.jpg" width="130" height="160"></div>
+            <div class="col pt-3"><img src="./pics/backgroundpics/6.jpg" width="130" height="160"></div>
+            <!-- <div class="col p-3"><img src="./pics/backgroundpics/7.jpg" width="130" height="130"></div>
+            <div class="col p-3"><img src="./pics/backgroundpics/8.jpg" width="130" height="130"></div> -->
+            <div class="fixed-bottom text-white text-center" id="drag" style="display:none;">
+                <h4>Drag</h4>
+                <img src="./pics/backgroundpics/drag.png" width="50" height="50">
+            </div>
+        </div>
+
+        <div class="firstpage vw-100 position-absolute d-flex align-items-center  justify-content-center happyBirthday">
+            <h1 class=" text-center text-white">Happy birthday <span id="name" style="color: aquamarine;"
+                    class=" font-weight-bold shadow"> </span></h1>
+        </div>
+    </div>
+    <div class="mt-5 pr-3 pl-3">
+        <div class=" container border-top border-info">
+            <p class="tag text-info">Memories are captured</p>
+        </div>
+    </div>
+    <div class="container-fluid vh-auto">
+
+        <div class="memoryblock container mb-3 border p-3 mt-5 shadow-lg">
+            <div id="clickme" style="display: none;position: absolute;">
+                <p style="font-family: fantasy;" class="next mr-0  float-left">click here</p>
+                <img src="./pics/other/clickme.png" alt="clickme" class="float-right" width="50" height="50">
+            </div>
+            <p>
+                <img src="./pics/backgroundpics/1.JPG" id="memoryimg" onclick="displaytext()">
+                <h6 id="paragraph"></h6>
+            </p>
+            
+           
+        </div>
+    </div>
+    <footer class="container " id="footer" style="display: none;">
+        <h6 class="next mb-5">Next<img src="./pics/other/next.png" alt="clickme" width="25" height="22"></h6>
+    </footer>
+</body>
+
+</html>
